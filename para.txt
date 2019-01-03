@@ -1,7 +1,7 @@
 1.000000,//Scale
 C:\Users\Khai\Desktop\Data,//PathSave
 1,//Maximum Picture
-115,//valBinary1 Fillter
+76,//valBinary1 Fillter
 25,//valBlur Fillter
 11,//szM Fillter
 21,//valSplit Fillter

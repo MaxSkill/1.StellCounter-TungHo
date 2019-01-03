@@ -412,7 +412,7 @@ private: System::ComponentModel::BackgroundWorker^  threadDrop;
 private: System::Windows::Forms::Panel^  panel2;
 private: System::Windows::Forms::Panel^  panel5;
 private: System::Windows::Forms::Label^  label80;
-private: System::Windows::Forms::Label^  label82;
+
 private: System::Windows::Forms::CheckBox^  checkBox7;
 private: System::Windows::Forms::TrackBar^  trackDilateTrig;
 
@@ -447,7 +447,7 @@ private: System::Windows::Forms::Label^  label59;
 private: System::Windows::Forms::NumericUpDown^  numMaxCur;
 
 private: System::Windows::Forms::Label^  label76;
-private: System::Windows::Forms::ComboBox^  comboBox1;
+
 
 
 
@@ -532,11 +532,10 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label63 = (gcnew System::Windows::Forms::Label());
 			this->btnFind = (gcnew System::Windows::Forms::Button());
 			this->pTracking = (gcnew System::Windows::Forms::Panel());
-			this->lbDilateTrig = (gcnew System::Windows::Forms::Label());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
 			this->panel5 = (gcnew System::Windows::Forms::Panel());
+			this->lbDilateTrig = (gcnew System::Windows::Forms::Label());
 			this->label80 = (gcnew System::Windows::Forms::Label());
-			this->label82 = (gcnew System::Windows::Forms::Label());
 			this->checkBox7 = (gcnew System::Windows::Forms::CheckBox());
 			this->trackDilateTrig = (gcnew System::Windows::Forms::TrackBar());
 			this->panel4 = (gcnew System::Windows::Forms::Panel());
@@ -655,7 +654,6 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->ThreadTrig = (gcnew System::ComponentModel::BackgroundWorker());
 			this->DelayTrig = (gcnew System::Windows::Forms::Timer(this->components));
 			this->DelayStopTrig = (gcnew System::Windows::Forms::Timer(this->components));
-			this->comboBox1 = (gcnew System::Windows::Forms::ComboBox());
 			this->panel1->SuspendLayout();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->picShow))->BeginInit();
 			this->pEditor->SuspendLayout();
@@ -784,16 +782,16 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnSave
 			// 
-			this->btnSave->BackColor = System::Drawing::Color::Cornsilk;
+			this->btnSave->BackColor = System::Drawing::Color::Silver;
 			this->btnSave->Dock = System::Windows::Forms::DockStyle::Top;
 			this->btnSave->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->btnSave->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->btnSave->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(0)), static_cast<System::Int32>(static_cast<System::Byte>(192)),
 				static_cast<System::Int32>(static_cast<System::Byte>(0)));
-			this->btnSave->Location = System::Drawing::Point(0, 226);
+			this->btnSave->Location = System::Drawing::Point(0, 668);
 			this->btnSave->Name = L"btnSave";
-			this->btnSave->Size = System::Drawing::Size(396, 29);
+			this->btnSave->Size = System::Drawing::Size(396, 40);
 			this->btnSave->TabIndex = 13;
 			this->btnSave->Text = L"Lưu thông số";
 			this->btnSave->UseVisualStyleBackColor = false;
@@ -840,7 +838,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->btnExit->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
 			this->btnExit->Font = (gcnew System::Drawing::Font(L"Arial Black", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnExit->Location = System::Drawing::Point(1180, 3);
+			this->btnExit->Location = System::Drawing::Point(1173, 3);
 			this->btnExit->Name = L"btnExit";
 			this->btnExit->Size = System::Drawing::Size(40, 33);
 			this->btnExit->TabIndex = 10;
@@ -877,9 +875,9 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->pRobot->Controls->Add(this->groupBox11);
 			this->pRobot->Controls->Add(this->label89);
 			this->pRobot->Dock = System::Windows::Forms::DockStyle::Top;
-			this->pRobot->Location = System::Drawing::Point(0, 198);
+			this->pRobot->Location = System::Drawing::Point(0, 658);
 			this->pRobot->Name = L"pRobot";
-			this->pRobot->Size = System::Drawing::Size(396, 28);
+			this->pRobot->Size = System::Drawing::Size(396, 10);
 			this->pRobot->TabIndex = 10;
 			this->pRobot->Visible = false;
 			// 
@@ -1142,17 +1140,18 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnRobot
 			// 
+			this->btnRobot->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btnRobot->Dock = System::Windows::Forms::DockStyle::Top;
 			this->btnRobot->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnRobot->ForeColor = System::Drawing::Color::DimGray;
-			this->btnRobot->Location = System::Drawing::Point(0, 170);
+			this->btnRobot->ForeColor = System::Drawing::Color::DarkGreen;
+			this->btnRobot->Location = System::Drawing::Point(0, 618);
 			this->btnRobot->Name = L"btnRobot";
-			this->btnRobot->Size = System::Drawing::Size(396, 28);
+			this->btnRobot->Size = System::Drawing::Size(396, 40);
 			this->btnRobot->TabIndex = 9;
 			this->btnRobot->Text = L"5Kết nối Phần cứng";
 			this->btnRobot->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btnRobot->UseVisualStyleBackColor = true;
+			this->btnRobot->UseVisualStyleBackColor = false;
 			this->btnRobot->Click += gcnew System::EventHandler(this, &Form1::btnRobot_Click);
 			// 
 			// pFind
@@ -1162,7 +1161,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->pFind->Controls->Add(this->panel21);
 			this->pFind->Controls->Add(this->panel20);
 			this->pFind->Dock = System::Windows::Forms::DockStyle::Top;
-			this->pFind->Location = System::Drawing::Point(0, 160);
+			this->pFind->Location = System::Drawing::Point(0, 608);
 			this->pFind->Name = L"pFind";
 			this->pFind->Size = System::Drawing::Size(396, 10);
 			this->pFind->TabIndex = 8;
@@ -1189,7 +1188,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label64->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label64->Font = (gcnew System::Drawing::Font(L"Calibri", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label64->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label64->ForeColor = System::Drawing::Color::Red;
 			this->label64->Location = System::Drawing::Point(0, 0);
 			this->label64->Name = L"label64";
 			this->label64->Size = System::Drawing::Size(388, 21);
@@ -1198,13 +1197,14 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label72
 			// 
+			this->label72->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label72->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label72->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label72->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label72->Location = System::Drawing::Point(221, 30);
+			this->label72->Location = System::Drawing::Point(194, 30);
 			this->label72->Name = L"label72";
-			this->label72->Size = System::Drawing::Size(32, 22);
+			this->label72->Size = System::Drawing::Size(75, 22);
 			this->label72->TabIndex = 70;
 			this->label72->Text = L"Max";
 			// 
@@ -1213,20 +1213,21 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->numericUpDown9->BackColor = System::Drawing::SystemColors::Control;
 			this->numericUpDown9->Font = (gcnew System::Drawing::Font(L"Calibri", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->numericUpDown9->Location = System::Drawing::Point(254, 29);
+			this->numericUpDown9->Location = System::Drawing::Point(270, 29);
 			this->numericUpDown9->Name = L"numericUpDown9";
-			this->numericUpDown9->Size = System::Drawing::Size(128, 23);
+			this->numericUpDown9->Size = System::Drawing::Size(106, 23);
 			this->numericUpDown9->TabIndex = 71;
 			// 
 			// label65
 			// 
+			this->label65->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label65->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label65->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label65->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label65->Location = System::Drawing::Point(16, 31);
+			this->label65->Location = System::Drawing::Point(5, 31);
 			this->label65->Name = L"label65";
-			this->label65->Size = System::Drawing::Size(30, 23);
+			this->label65->Size = System::Drawing::Size(38, 23);
 			this->label65->TabIndex = 70;
 			this->label65->Text = L"Min";
 			// 
@@ -1235,9 +1236,9 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->numericUpDown8->BackColor = System::Drawing::SystemColors::Control;
 			this->numericUpDown8->Font = (gcnew System::Drawing::Font(L"Calibri", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->numericUpDown8->Location = System::Drawing::Point(46, 31);
+			this->numericUpDown8->Location = System::Drawing::Point(41, 31);
 			this->numericUpDown8->Name = L"numericUpDown8";
-			this->numericUpDown8->Size = System::Drawing::Size(115, 23);
+			this->numericUpDown8->Size = System::Drawing::Size(137, 23);
 			this->numericUpDown8->TabIndex = 71;
 			// 
 			// panel21
@@ -1283,7 +1284,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->numMaxCur->BackColor = System::Drawing::Color::Snow;
 			this->numMaxCur->Font = (gcnew System::Drawing::Font(L"Calibri", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->numMaxCur->Location = System::Drawing::Point(273, 24);
+			this->numMaxCur->Location = System::Drawing::Point(270, 24);
 			this->numMaxCur->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { -1486618625, 232830643, 0, 0 });
 			this->numMaxCur->Name = L"numMaxCur";
 			this->numMaxCur->Size = System::Drawing::Size(106, 23);
@@ -1291,16 +1292,16 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label76
 			// 
-			this->label76->BackColor = System::Drawing::SystemColors::Control;
+			this->label76->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label76->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label76->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label76->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label76->Location = System::Drawing::Point(197, 24);
+			this->label76->Location = System::Drawing::Point(194, 24);
 			this->label76->Name = L"label76";
 			this->label76->Size = System::Drawing::Size(75, 23);
 			this->label76->TabIndex = 80;
-			this->label76->Text = L"maxCurrent";
+			this->label76->Text = L"MaxCurrent";
 			this->label76->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label66
@@ -1310,7 +1311,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label66->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label66->Font = (gcnew System::Drawing::Font(L"Calibri", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label66->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label66->ForeColor = System::Drawing::Color::Red;
 			this->label66->Location = System::Drawing::Point(0, 0);
 			this->label66->Name = L"label66";
 			this->label66->Size = System::Drawing::Size(388, 21);
@@ -1319,11 +1320,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label71
 			// 
+			this->label71->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label71->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label71->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label71->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label71->Location = System::Drawing::Point(4, 24);
+			this->label71->Location = System::Drawing::Point(5, 24);
 			this->label71->Name = L"label71";
 			this->label71->Size = System::Drawing::Size(38, 23);
 			this->label71->TabIndex = 70;
@@ -1336,8 +1338,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label67->BackColor = System::Drawing::SystemColors::Control;
 			this->label67->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label67->ForeColor = System::Drawing::Color::Chocolate;
-			this->label67->Location = System::Drawing::Point(-1, 70);
+			this->label67->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label67->Location = System::Drawing::Point(-1, 68);
 			this->label67->Name = L"label67";
 			this->label67->Size = System::Drawing::Size(30, 18);
 			this->label67->TabIndex = 68;
@@ -1352,7 +1354,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label68->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label68->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label68->Location = System::Drawing::Point(334, 67);
+			this->label68->Location = System::Drawing::Point(334, 68);
 			this->label68->Name = L"label68";
 			this->label68->Size = System::Drawing::Size(58, 18);
 			this->label68->TabIndex = 68;
@@ -1365,7 +1367,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->trackBar9->Location = System::Drawing::Point(-4, 49);
 			this->trackBar9->Maximum = 255;
 			this->trackBar9->Name = L"trackBar9";
-			this->trackBar9->Size = System::Drawing::Size(396, 22);
+			this->trackBar9->Size = System::Drawing::Size(380, 20);
 			this->trackBar9->TabIndex = 66;
 			this->trackBar9->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackBar9->Value = 255;
@@ -1445,7 +1447,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label56
 			// 
-			this->label56->BackColor = System::Drawing::SystemColors::Control;
+			this->label56->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label56->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label56->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label56->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
@@ -1454,7 +1456,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label56->Name = L"label56";
 			this->label56->Size = System::Drawing::Size(75, 23);
 			this->label56->TabIndex = 74;
-			this->label56->Text = L"minCurrent";
+			this->label56->Text = L"MinCurrent";
 			this->label56->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// numSizeMin
@@ -1475,7 +1477,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->trackBar8->Location = System::Drawing::Point(-1, 54);
 			this->trackBar8->Maximum = 255;
 			this->trackBar8->Name = L"trackBar8";
-			this->trackBar8->Size = System::Drawing::Size(396, 22);
+			this->trackBar8->Size = System::Drawing::Size(380, 20);
 			this->trackBar8->TabIndex = 66;
 			this->trackBar8->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackBar8->Value = 255;
@@ -1487,7 +1489,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label17->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label17->Font = (gcnew System::Drawing::Font(L"Calibri", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label17->ForeColor = System::Drawing::Color::Coral;
+			this->label17->ForeColor = System::Drawing::Color::Red;
 			this->label17->Location = System::Drawing::Point(0, 0);
 			this->label17->Name = L"label17";
 			this->label17->Size = System::Drawing::Size(388, 21);
@@ -1496,11 +1498,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label22
 			// 
+			this->label22->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label22->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label22->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label22->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label22->Location = System::Drawing::Point(4, 27);
+			this->label22->Location = System::Drawing::Point(5, 27);
 			this->label22->Name = L"label22";
 			this->label22->Size = System::Drawing::Size(38, 23);
 			this->label22->TabIndex = 70;
@@ -1513,8 +1516,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label62->BackColor = System::Drawing::SystemColors::Control;
 			this->label62->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label62->ForeColor = System::Drawing::Color::Chocolate;
-			this->label62->Location = System::Drawing::Point(-3, 74);
+			this->label62->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label62->Location = System::Drawing::Point(-3, 72);
 			this->label62->Name = L"label62";
 			this->label62->Size = System::Drawing::Size(30, 18);
 			this->label62->TabIndex = 68;
@@ -1529,7 +1532,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label63->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label63->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label63->Location = System::Drawing::Point(347, 74);
+			this->label63->Location = System::Drawing::Point(347, 72);
 			this->label63->Name = L"label63";
 			this->label63->Size = System::Drawing::Size(43, 18);
 			this->label63->TabIndex = 68;
@@ -1538,48 +1541,33 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnFind
 			// 
+			this->btnFind->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btnFind->Dock = System::Windows::Forms::DockStyle::Top;
 			this->btnFind->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnFind->ForeColor = System::Drawing::Color::DimGray;
-			this->btnFind->Location = System::Drawing::Point(0, 132);
+			this->btnFind->ForeColor = System::Drawing::Color::DarkGreen;
+			this->btnFind->Location = System::Drawing::Point(0, 568);
 			this->btnFind->Name = L"btnFind";
-			this->btnFind->Size = System::Drawing::Size(396, 28);
+			this->btnFind->Size = System::Drawing::Size(396, 40);
 			this->btnFind->TabIndex = 7;
 			this->btnFind->Text = L"4.Thông số  Phân tích số lượng";
 			this->btnFind->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btnFind->UseVisualStyleBackColor = true;
+			this->btnFind->UseVisualStyleBackColor = false;
 			this->btnFind->Click += gcnew System::EventHandler(this, &Form1::btnFind_Click);
 			// 
 			// pTracking
 			// 
 			this->pTracking->BackColor = System::Drawing::Color::Snow;
 			this->pTracking->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
-			this->pTracking->Controls->Add(this->lbDilateTrig);
 			this->pTracking->Controls->Add(this->panel2);
 			this->pTracking->Controls->Add(this->panel19);
 			this->pTracking->Controls->Add(this->panel17);
 			this->pTracking->Dock = System::Windows::Forms::DockStyle::Top;
-			this->pTracking->Location = System::Drawing::Point(0, 122);
+			this->pTracking->Location = System::Drawing::Point(0, 140);
 			this->pTracking->Name = L"pTracking";
-			this->pTracking->Size = System::Drawing::Size(396, 10);
+			this->pTracking->Size = System::Drawing::Size(396, 428);
 			this->pTracking->TabIndex = 6;
 			this->pTracking->Visible = false;
-			// 
-			// lbDilateTrig
-			// 
-			this->lbDilateTrig->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->lbDilateTrig->BackColor = System::Drawing::SystemColors::Control;
-			this->lbDilateTrig->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->lbDilateTrig->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->lbDilateTrig->Location = System::Drawing::Point(340, 349);
-			this->lbDilateTrig->Name = L"lbDilateTrig";
-			this->lbDilateTrig->Size = System::Drawing::Size(50, 18);
-			this->lbDilateTrig->TabIndex = 70;
-			this->lbDilateTrig->Text = L"255";
-			this->lbDilateTrig->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// panel2
 			// 
@@ -1596,8 +1584,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// panel5
 			// 
 			this->panel5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel5->Controls->Add(this->lbDilateTrig);
 			this->panel5->Controls->Add(this->label80);
-			this->panel5->Controls->Add(this->label82);
 			this->panel5->Controls->Add(this->checkBox7);
 			this->panel5->Controls->Add(this->trackDilateTrig);
 			this->panel5->Dock = System::Windows::Forms::DockStyle::Top;
@@ -1606,6 +1594,21 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->panel5->Size = System::Drawing::Size(388, 166);
 			this->panel5->TabIndex = 78;
 			// 
+			// lbDilateTrig
+			// 
+			this->lbDilateTrig->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->lbDilateTrig->BackColor = System::Drawing::SystemColors::Control;
+			this->lbDilateTrig->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->lbDilateTrig->ForeColor = System::Drawing::SystemColors::Highlight;
+			this->lbDilateTrig->Location = System::Drawing::Point(342, 38);
+			this->lbDilateTrig->Name = L"lbDilateTrig";
+			this->lbDilateTrig->Size = System::Drawing::Size(50, 18);
+			this->lbDilateTrig->TabIndex = 70;
+			this->lbDilateTrig->Text = L"255";
+			this->lbDilateTrig->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
 			// label80
 			// 
 			this->label80->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
@@ -1613,28 +1616,13 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label80->BackColor = System::Drawing::SystemColors::Control;
 			this->label80->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label80->ForeColor = System::Drawing::Color::Chocolate;
-			this->label80->Location = System::Drawing::Point(-2, 48);
+			this->label80->ForeColor = System::Drawing::SystemColors::Highlight;
+			this->label80->Location = System::Drawing::Point(-2, 38);
 			this->label80->Name = L"label80";
 			this->label80->Size = System::Drawing::Size(26, 18);
 			this->label80->TabIndex = 68;
 			this->label80->Text = L"0";
 			this->label80->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
-			// 
-			// label82
-			// 
-			this->label82->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Left)
-				| System::Windows::Forms::AnchorStyles::Right));
-			this->label82->BackColor = System::Drawing::SystemColors::Control;
-			this->label82->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->label82->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label82->Location = System::Drawing::Point(358, 48);
-			this->label82->Name = L"label82";
-			this->label82->Size = System::Drawing::Size(26, 18);
-			this->label82->TabIndex = 68;
-			this->label82->Text = L"255";
-			this->label82->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// checkBox7
 			// 
@@ -1657,7 +1645,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->trackDilateTrig->Location = System::Drawing::Point(-2, 21);
 			this->trackDilateTrig->Maximum = 255;
 			this->trackDilateTrig->Name = L"trackDilateTrig";
-			this->trackDilateTrig->Size = System::Drawing::Size(388, 19);
+			this->trackDilateTrig->Size = System::Drawing::Size(380, 20);
 			this->trackDilateTrig->TabIndex = 66;
 			this->trackDilateTrig->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackDilateTrig->Value = 255;
@@ -1683,7 +1671,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label74->BackColor = System::Drawing::SystemColors::Control;
 			this->label74->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label74->ForeColor = System::Drawing::Color::Chocolate;
+			this->label74->ForeColor = System::Drawing::SystemColors::Highlight;
 			this->label74->Location = System::Drawing::Point(-2, 48);
 			this->label74->Name = L"label74";
 			this->label74->Size = System::Drawing::Size(26, 18);
@@ -1698,8 +1686,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->lbBinaryTrig->BackColor = System::Drawing::SystemColors::Control;
 			this->lbBinaryTrig->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->lbBinaryTrig->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->lbBinaryTrig->Location = System::Drawing::Point(332, 48);
+			this->lbBinaryTrig->ForeColor = System::Drawing::SystemColors::Highlight;
+			this->lbBinaryTrig->Location = System::Drawing::Point(342, 48);
 			this->lbBinaryTrig->Name = L"lbBinaryTrig";
 			this->lbBinaryTrig->Size = System::Drawing::Size(50, 18);
 			this->lbBinaryTrig->TabIndex = 68;
@@ -1727,7 +1715,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->trackBinnaryTrig->Location = System::Drawing::Point(-2, 27);
 			this->trackBinnaryTrig->Maximum = 255;
 			this->trackBinnaryTrig->Name = L"trackBinnaryTrig";
-			this->trackBinnaryTrig->Size = System::Drawing::Size(388, 22);
+			this->trackBinnaryTrig->Size = System::Drawing::Size(380, 20);
 			this->trackBinnaryTrig->TabIndex = 66;
 			this->trackBinnaryTrig->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackBinnaryTrig->Value = 255;
@@ -1768,7 +1756,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label11->AutoSize = true;
 			this->label11->Font = (gcnew System::Drawing::Font(L"Calibri", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label11->Location = System::Drawing::Point(258, 68);
+			this->label11->Location = System::Drawing::Point(224, 65);
 			this->label11->Name = L"label11";
 			this->label11->Size = System::Drawing::Size(23, 15);
 			this->label11->TabIndex = 75;
@@ -1776,12 +1764,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label14
 			// 
-			this->label14->BackColor = System::Drawing::SystemColors::Control;
+			this->label14->BackColor = System::Drawing::Color::CadetBlue;
 			this->label14->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label14->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label14->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label14->Location = System::Drawing::Point(39, 60);
+			this->label14->Location = System::Drawing::Point(5, 57);
 			this->label14->Name = L"label14";
 			this->label14->Size = System::Drawing::Size(78, 23);
 			this->label14->TabIndex = 73;
@@ -1793,7 +1781,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->numDelayStopTrig->BackColor = System::Drawing::Color::Snow;
 			this->numDelayStopTrig->Font = (gcnew System::Drawing::Font(L"Calibri", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->numDelayStopTrig->Location = System::Drawing::Point(117, 60);
+			this->numDelayStopTrig->Location = System::Drawing::Point(83, 57);
 			this->numDelayStopTrig->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 100000, 0, 0, 0 });
 			this->numDelayStopTrig->Name = L"numDelayStopTrig";
 			this->numDelayStopTrig->Size = System::Drawing::Size(137, 23);
@@ -1805,7 +1793,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label61->AutoSize = true;
 			this->label61->Font = (gcnew System::Drawing::Font(L"Calibri", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label61->Location = System::Drawing::Point(257, 35);
+			this->label61->Location = System::Drawing::Point(223, 32);
 			this->label61->Name = L"label61";
 			this->label61->Size = System::Drawing::Size(23, 15);
 			this->label61->TabIndex = 72;
@@ -1827,12 +1815,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label54
 			// 
-			this->label54->BackColor = System::Drawing::SystemColors::Control;
+			this->label54->BackColor = System::Drawing::Color::CadetBlue;
 			this->label54->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label54->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label54->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label54->Location = System::Drawing::Point(38, 27);
+			this->label54->Location = System::Drawing::Point(4, 24);
 			this->label54->Name = L"label54";
 			this->label54->Size = System::Drawing::Size(78, 23);
 			this->label54->TabIndex = 70;
@@ -1844,7 +1832,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->numDelayStartTrig->BackColor = System::Drawing::Color::Snow;
 			this->numDelayStartTrig->Font = (gcnew System::Drawing::Font(L"Calibri", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->numDelayStartTrig->Location = System::Drawing::Point(116, 27);
+			this->numDelayStartTrig->Location = System::Drawing::Point(82, 24);
 			this->numDelayStartTrig->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 100000, 0, 0, 0 });
 			this->numDelayStartTrig->Name = L"numDelayStartTrig";
 			this->numDelayStartTrig->Size = System::Drawing::Size(137, 23);
@@ -1884,13 +1872,13 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label69
 			// 
-			this->label69->BackColor = System::Drawing::SystemColors::Control;
+			this->label69->BackColor = System::Drawing::Color::CadetBlue;
 			this->label69->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label69->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label69->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label69->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label69->Location = System::Drawing::Point(4, 62);
+			this->label69->ForeColor = System::Drawing::SystemColors::Desktop;
+			this->label69->Location = System::Drawing::Point(5, 62);
 			this->label69->Name = L"label69";
 			this->label69->Size = System::Drawing::Size(38, 23);
 			this->label69->TabIndex = 72;
@@ -1921,7 +1909,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->numMinArea->BackColor = System::Drawing::Color::Snow;
 			this->numMinArea->Font = (gcnew System::Drawing::Font(L"Calibri", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->numMinArea->Location = System::Drawing::Point(41, 28);
+			this->numMinArea->Location = System::Drawing::Point(40, 28);
 			this->numMinArea->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1000000, 0, 0, 0 });
 			this->numMinArea->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
 			this->numMinArea->Name = L"numMinArea";
@@ -1937,7 +1925,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label6->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label6->Font = (gcnew System::Drawing::Font(L"Calibri", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label6->ForeColor = System::Drawing::Color::Coral;
+			this->label6->ForeColor = System::Drawing::Color::Red;
 			this->label6->Location = System::Drawing::Point(0, 0);
 			this->label6->Name = L"label6";
 			this->label6->Size = System::Drawing::Size(388, 21);
@@ -1946,12 +1934,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label53
 			// 
-			this->label53->BackColor = System::Drawing::SystemColors::Control;
+			this->label53->BackColor = System::Drawing::Color::CadetBlue;
 			this->label53->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label53->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label53->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label53->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label53->ForeColor = System::Drawing::SystemColors::Desktop;
 			this->label53->Location = System::Drawing::Point(5, 28);
 			this->label53->Name = L"label53";
 			this->label53->Size = System::Drawing::Size(38, 23);
@@ -1961,12 +1949,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label20
 			// 
-			this->label20->BackColor = System::Drawing::SystemColors::Control;
+			this->label20->BackColor = System::Drawing::Color::CadetBlue;
 			this->label20->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label20->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label20->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label20->Location = System::Drawing::Point(189, 29);
+			this->label20->Location = System::Drawing::Point(189, 28);
 			this->label20->Name = L"label20";
 			this->label20->Size = System::Drawing::Size(86, 23);
 			this->label20->TabIndex = 70;
@@ -1975,17 +1963,18 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnTrigger
 			// 
+			this->btnTrigger->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btnTrigger->Dock = System::Windows::Forms::DockStyle::Top;
 			this->btnTrigger->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnTrigger->ForeColor = System::Drawing::Color::DimGray;
-			this->btnTrigger->Location = System::Drawing::Point(0, 94);
+			this->btnTrigger->ForeColor = System::Drawing::Color::DarkGreen;
+			this->btnTrigger->Location = System::Drawing::Point(0, 100);
 			this->btnTrigger->Name = L"btnTrigger";
-			this->btnTrigger->Size = System::Drawing::Size(396, 28);
+			this->btnTrigger->Size = System::Drawing::Size(396, 40);
 			this->btnTrigger->TabIndex = 5;
 			this->btnTrigger->Text = L"3.Thông số  Trigger";
 			this->btnTrigger->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btnTrigger->UseVisualStyleBackColor = true;
+			this->btnTrigger->UseVisualStyleBackColor = false;
 			this->btnTrigger->Click += gcnew System::EventHandler(this, &Form1::btnTrigger_Click);
 			// 
 			// pFilter
@@ -1997,7 +1986,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->pFilter->Controls->Add(this->panel9);
 			this->pFilter->Controls->Add(this->panel8);
 			this->pFilter->Dock = System::Windows::Forms::DockStyle::Top;
-			this->pFilter->Location = System::Drawing::Point(0, 84);
+			this->pFilter->Location = System::Drawing::Point(0, 90);
 			this->pFilter->Name = L"pFilter";
 			this->pFilter->Size = System::Drawing::Size(396, 10);
 			this->pFilter->TabIndex = 4;
@@ -2024,7 +2013,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label16->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label16->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label16->Location = System::Drawing::Point(360, 50);
+			this->label16->Location = System::Drawing::Point(358, 50);
 			this->label16->Name = L"label16";
 			this->label16->Size = System::Drawing::Size(30, 18);
 			this->label16->TabIndex = 68;
@@ -2038,8 +2027,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label23->BackColor = System::Drawing::SystemColors::Control;
 			this->label23->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label23->ForeColor = System::Drawing::Color::Chocolate;
-			this->label23->Location = System::Drawing::Point(-1, 49);
+			this->label23->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label23->Location = System::Drawing::Point(0, 49);
 			this->label23->Name = L"label23";
 			this->label23->Size = System::Drawing::Size(30, 18);
 			this->label23->TabIndex = 68;
@@ -2050,10 +2039,10 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			this->trackBinary2->AutoSize = false;
 			this->trackBinary2->LargeChange = 1;
-			this->trackBinary2->Location = System::Drawing::Point(-2, 28);
+			this->trackBinary2->Location = System::Drawing::Point(4, 28);
 			this->trackBinary2->Maximum = 255;
 			this->trackBinary2->Name = L"trackBinary2";
-			this->trackBinary2->Size = System::Drawing::Size(394, 22);
+			this->trackBinary2->Size = System::Drawing::Size(380, 20);
 			this->trackBinary2->TabIndex = 66;
 			this->trackBinary2->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackBinary2->Value = 255;
@@ -2096,7 +2085,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label13->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label13->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label13->Location = System::Drawing::Point(360, 48);
+			this->label13->Location = System::Drawing::Point(358, 48);
 			this->label13->Name = L"label13";
 			this->label13->Size = System::Drawing::Size(30, 18);
 			this->label13->TabIndex = 68;
@@ -2106,11 +2095,11 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// trackSplit
 			// 
 			this->trackSplit->AutoSize = false;
-			this->trackSplit->Location = System::Drawing::Point(-2, 29);
+			this->trackSplit->Location = System::Drawing::Point(4, 29);
 			this->trackSplit->Maximum = 50;
 			this->trackSplit->Minimum = 1;
 			this->trackSplit->Name = L"trackSplit";
-			this->trackSplit->Size = System::Drawing::Size(396, 22);
+			this->trackSplit->Size = System::Drawing::Size(380, 20);
 			this->trackSplit->TabIndex = 66;
 			this->trackSplit->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackSplit->Value = 50;
@@ -2139,8 +2128,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label15->BackColor = System::Drawing::SystemColors::Control;
 			this->label15->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label15->ForeColor = System::Drawing::Color::Chocolate;
-			this->label15->Location = System::Drawing::Point(-1, 49);
+			this->label15->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label15->Location = System::Drawing::Point(0, 49);
 			this->label15->Name = L"label15";
 			this->label15->Size = System::Drawing::Size(30, 18);
 			this->label15->TabIndex = 68;
@@ -2167,8 +2156,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label10->BackColor = System::Drawing::SystemColors::Control;
 			this->label10->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label10->ForeColor = System::Drawing::Color::Chocolate;
-			this->label10->Location = System::Drawing::Point(3, 51);
+			this->label10->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label10->Location = System::Drawing::Point(0, 51);
 			this->label10->Name = L"label10";
 			this->label10->Size = System::Drawing::Size(30, 18);
 			this->label10->TabIndex = 68;
@@ -2183,7 +2172,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label12->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label12->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label12->Location = System::Drawing::Point(360, 51);
+			this->label12->Location = System::Drawing::Point(358, 51);
 			this->label12->Name = L"label12";
 			this->label12->Size = System::Drawing::Size(30, 18);
 			this->label12->TabIndex = 68;
@@ -2209,11 +2198,11 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// trackM
 			// 
 			this->trackM->AutoSize = false;
-			this->trackM->Location = System::Drawing::Point(-1, 29);
+			this->trackM->Location = System::Drawing::Point(4, 29);
 			this->trackM->Maximum = 50;
 			this->trackM->Minimum = 1;
 			this->trackM->Name = L"trackM";
-			this->trackM->Size = System::Drawing::Size(393, 22);
+			this->trackM->Size = System::Drawing::Size(380, 20);
 			this->trackM->TabIndex = 66;
 			this->trackM->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackM->Value = 50;
@@ -2240,7 +2229,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label9->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->label9->ForeColor = System::Drawing::Color::CornflowerBlue;
-			this->label9->Location = System::Drawing::Point(357, 46);
+			this->label9->Location = System::Drawing::Point(358, 46);
 			this->label9->Name = L"label9";
 			this->label9->Size = System::Drawing::Size(30, 18);
 			this->label9->TabIndex = 68;
@@ -2254,8 +2243,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label5->BackColor = System::Drawing::SystemColors::Control;
 			this->label5->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label5->ForeColor = System::Drawing::Color::Chocolate;
-			this->label5->Location = System::Drawing::Point(-1, 48);
+			this->label5->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label5->Location = System::Drawing::Point(0, 48);
 			this->label5->Name = L"label5";
 			this->label5->Size = System::Drawing::Size(30, 18);
 			this->label5->TabIndex = 68;
@@ -2281,11 +2270,11 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// trackBlur
 			// 
 			this->trackBlur->AutoSize = false;
-			this->trackBlur->Location = System::Drawing::Point(-2, 25);
+			this->trackBlur->Location = System::Drawing::Point(4, 25);
 			this->trackBlur->Maximum = 50;
 			this->trackBlur->Minimum = 1;
 			this->trackBlur->Name = L"trackBlur";
-			this->trackBlur->Size = System::Drawing::Size(394, 22);
+			this->trackBlur->Size = System::Drawing::Size(380, 20);
 			this->trackBlur->TabIndex = 66;
 			this->trackBlur->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackBlur->Value = 1;
@@ -2311,8 +2300,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label24->BackColor = System::Drawing::SystemColors::Control;
 			this->label24->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label24->ForeColor = System::Drawing::Color::Chocolate;
-			this->label24->Location = System::Drawing::Point(-2, 44);
+			this->label24->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label24->Location = System::Drawing::Point(0, 44);
 			this->label24->Name = L"label24";
 			this->label24->Size = System::Drawing::Size(30, 18);
 			this->label24->TabIndex = 68;
@@ -2355,7 +2344,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->trackValBinary->Location = System::Drawing::Point(4, 20);
 			this->trackValBinary->Maximum = 255;
 			this->trackValBinary->Name = L"trackValBinary";
-			this->trackValBinary->Size = System::Drawing::Size(388, 22);
+			this->trackValBinary->Size = System::Drawing::Size(380, 20);
 			this->trackValBinary->TabIndex = 66;
 			this->trackValBinary->TickStyle = System::Windows::Forms::TickStyle::None;
 			this->trackValBinary->Value = 255;
@@ -2363,17 +2352,18 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnFilter
 			// 
+			this->btnFilter->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btnFilter->Dock = System::Windows::Forms::DockStyle::Top;
 			this->btnFilter->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnFilter->ForeColor = System::Drawing::Color::DimGray;
-			this->btnFilter->Location = System::Drawing::Point(0, 45);
+			this->btnFilter->ForeColor = System::Drawing::Color::DarkGreen;
+			this->btnFilter->Location = System::Drawing::Point(0, 50);
 			this->btnFilter->Name = L"btnFilter";
-			this->btnFilter->Size = System::Drawing::Size(396, 39);
+			this->btnFilter->Size = System::Drawing::Size(396, 40);
 			this->btnFilter->TabIndex = 3;
 			this->btnFilter->Text = L"2.Điều chỉnh bộ lọc";
 			this->btnFilter->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btnFilter->UseVisualStyleBackColor = true;
+			this->btnFilter->UseVisualStyleBackColor = false;
 			this->btnFilter->Click += gcnew System::EventHandler(this, &Form1::btnFilter_Click);
 			// 
 			// pCCD
@@ -2388,7 +2378,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->pCCD->Controls->Add(this->label81);
 			this->pCCD->Controls->Add(this->btnDefautSize);
 			this->pCCD->Dock = System::Windows::Forms::DockStyle::Top;
-			this->pCCD->Location = System::Drawing::Point(0, 35);
+			this->pCCD->Location = System::Drawing::Point(0, 40);
 			this->pCCD->Name = L"pCCD";
 			this->pCCD->Size = System::Drawing::Size(396, 10);
 			this->pCCD->TabIndex = 2;
@@ -2411,6 +2401,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label48
 			// 
+			this->label48->BackColor = System::Drawing::Color::CornflowerBlue;
 			this->label48->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label48->Font = (gcnew System::Drawing::Font(L"Calibri", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
@@ -2418,8 +2409,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label48->Name = L"label48";
 			this->label48->Size = System::Drawing::Size(83, 105);
 			this->label48->TabIndex = 75;
-			this->label48->Text = L"5.\r\nSave\r\nData\r\n\r\n";
-			this->label48->TextAlign = System::Drawing::ContentAlignment::BottomCenter;
+			this->label48->Text = L"\r\nSave\r\nData\r\n\r\n";
+			this->label48->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// panel7
 			// 
@@ -2470,8 +2461,9 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnBroswer
 			// 
-			this->btnBroswer->BackColor = System::Drawing::SystemColors::InactiveCaption;
+			this->btnBroswer->BackColor = System::Drawing::Color::CadetBlue;
 			this->btnBroswer->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
+			this->btnBroswer->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->btnBroswer->Location = System::Drawing::Point(280, 65);
 			this->btnBroswer->Name = L"btnBroswer";
 			this->btnBroswer->Size = System::Drawing::Size(107, 41);
@@ -2565,11 +2557,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label73
 			// 
-			this->label73->BackColor = System::Drawing::Color::Cornsilk;
+			this->label73->BackColor = System::Drawing::Color::CadetBlue;
 			this->label73->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label73->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label73->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label73->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->label73->Location = System::Drawing::Point(88, 1);
 			this->label73->Name = L"label73";
 			this->label73->Size = System::Drawing::Size(48, 23);
@@ -2615,6 +2608,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label55
 			// 
+			this->label55->BackColor = System::Drawing::Color::CornflowerBlue;
 			this->label55->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label55->Font = (gcnew System::Drawing::Font(L"Calibri", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
@@ -2622,8 +2616,8 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label55->Name = L"label55";
 			this->label55->Size = System::Drawing::Size(81, 62);
 			this->label55->TabIndex = 73;
-			this->label55->Text = L"3.\r\nGain";
-			this->label55->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label55->Text = L"\r\nGain";
+			this->label55->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// label51
 			// 
@@ -2632,7 +2626,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label51->BackColor = System::Drawing::SystemColors::Control;
 			this->label51->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label51->ForeColor = System::Drawing::Color::Chocolate;
+			this->label51->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label51->Location = System::Drawing::Point(79, 46);
 			this->label51->Name = L"label51";
 			this->label51->Size = System::Drawing::Size(25, 18);
@@ -2657,11 +2651,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label70
 			// 
-			this->label70->BackColor = System::Drawing::Color::Cornsilk;
+			this->label70->BackColor = System::Drawing::Color::CadetBlue;
 			this->label70->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->label70->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
 			this->label70->Font = (gcnew System::Drawing::Font(L"Calibri Light", 9.75F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
+			this->label70->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->label70->Location = System::Drawing::Point(88, 2);
 			this->label70->Name = L"label70";
 			this->label70->Size = System::Drawing::Size(48, 23);
@@ -2697,7 +2692,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label49->BackColor = System::Drawing::SystemColors::Control;
 			this->label49->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label49->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label49->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label49->Location = System::Drawing::Point(359, 46);
 			this->label49->Name = L"label49";
 			this->label49->Size = System::Drawing::Size(25, 18);
@@ -2707,17 +2702,17 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label7
 			// 
-			this->label7->BackColor = System::Drawing::Color::Cornsilk;
+			this->label7->BackColor = System::Drawing::Color::CornflowerBlue;
 			this->label7->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label7->Font = (gcnew System::Drawing::Font(L"Calibri", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label7->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->label7->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->label7->Location = System::Drawing::Point(1, 1);
 			this->label7->Name = L"label7";
 			this->label7->Size = System::Drawing::Size(81, 63);
 			this->label7->TabIndex = 21;
-			this->label7->Text = L"2.\r\nExplosure";
-			this->label7->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label7->Text = L"\r\nExplosure";
+			this->label7->TextAlign = System::Drawing::ContentAlignment::TopCenter;
 			// 
 			// label50
 			// 
@@ -2726,7 +2721,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label50->BackColor = System::Drawing::SystemColors::Control;
 			this->label50->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 9, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label50->ForeColor = System::Drawing::Color::Chocolate;
+			this->label50->ForeColor = System::Drawing::SystemColors::ActiveCaption;
 			this->label50->Location = System::Drawing::Point(79, 47);
 			this->label50->Name = L"label50";
 			this->label50->Size = System::Drawing::Size(25, 18);
@@ -2756,9 +2751,9 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnDropOK
 			// 
-			this->btnDropOK->BackColor = System::Drawing::SystemColors::InactiveBorder;
+			this->btnDropOK->BackColor = System::Drawing::Color::CadetBlue;
 			this->btnDropOK->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnDropOK->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->btnDropOK->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->btnDropOK->Location = System::Drawing::Point(88, 41);
 			this->btnDropOK->Name = L"btnDropOK";
 			this->btnDropOK->Size = System::Drawing::Size(59, 33);
@@ -2769,9 +2764,9 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnDrop
 			// 
-			this->btnDrop->BackColor = System::Drawing::SystemColors::InactiveBorder;
+			this->btnDrop->BackColor = System::Drawing::Color::CadetBlue;
 			this->btnDrop->FlatStyle = System::Windows::Forms::FlatStyle::Popup;
-			this->btnDrop->ForeColor = System::Drawing::Color::CornflowerBlue;
+			this->btnDrop->ForeColor = System::Drawing::SystemColors::InfoText;
 			this->btnDrop->Location = System::Drawing::Point(88, 4);
 			this->btnDrop->Name = L"btnDrop";
 			this->btnDrop->Size = System::Drawing::Size(59, 33);
@@ -2870,6 +2865,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// label47
 			// 
+			this->label47->BackColor = System::Drawing::Color::CornflowerBlue;
 			this->label47->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label47->Font = (gcnew System::Drawing::Font(L"Calibri", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
@@ -2877,7 +2873,7 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->label47->Name = L"label47";
 			this->label47->Size = System::Drawing::Size(80, 72);
 			this->label47->TabIndex = 21;
-			this->label47->Text = L"1.\r\nResolution";
+			this->label47->Text = L"Resolution";
 			this->label47->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// label35
@@ -2924,17 +2920,18 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			// 
 			// btnCCD
 			// 
+			this->btnCCD->BackColor = System::Drawing::SystemColors::ActiveCaption;
 			this->btnCCD->Dock = System::Windows::Forms::DockStyle::Top;
 			this->btnCCD->Font = (gcnew System::Drawing::Font(L"Calibri", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->btnCCD->ForeColor = System::Drawing::Color::DimGray;
+			this->btnCCD->ForeColor = System::Drawing::Color::DarkGreen;
 			this->btnCCD->Location = System::Drawing::Point(0, 0);
 			this->btnCCD->Name = L"btnCCD";
-			this->btnCCD->Size = System::Drawing::Size(396, 35);
+			this->btnCCD->Size = System::Drawing::Size(396, 40);
 			this->btnCCD->TabIndex = 1;
 			this->btnCCD->Text = L"1.Cài CCD-Basler";
 			this->btnCCD->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-			this->btnCCD->UseVisualStyleBackColor = true;
+			this->btnCCD->UseVisualStyleBackColor = false;
 			this->btnCCD->Click += gcnew System::EventHandler(this, &Form1::btnCCD_Click);
 			// 
 			// btnRun
@@ -3093,21 +3090,12 @@ private: System::Windows::Forms::ComboBox^  comboBox1;
 			this->DelayStopTrig->Interval = 1000;
 			this->DelayStopTrig->Tick += gcnew System::EventHandler(this, &Form1::DelayStopTrig_Tick);
 			// 
-			// comboBox1
-			// 
-			this->comboBox1->FormattingEnabled = true;
-			this->comboBox1->Location = System::Drawing::Point(1060, 4);
-			this->comboBox1->Name = L"comboBox1";
-			this->comboBox1->Size = System::Drawing::Size(114, 31);
-			this->comboBox1->TabIndex = 16;
-			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(10, 23);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::Control;
 			this->ClientSize = System::Drawing::Size(1223, 750);
-			this->Controls->Add(this->comboBox1);
 			this->Controls->Add(this->pEnd);
 			this->Controls->Add(this->btnOnline);
 			this->Controls->Add(this->button4);
@@ -3490,10 +3478,10 @@ private: System::Void Form1_Load(System::Object^  sender, System::EventArgs^  e)
 			 
 			 loadParameter();
 			 trackValBinary->Value = valBinary1;
-			 pCCD->Height = 434;
-			 pFilter->Height = 355;
-			 pTracking->Height = 439;
-			 pFind->Height = 256;
+			 pCCD->Height = 338;
+			 pFilter->Height = 365;
+			 pTracking->Height = 364;
+			 pFind->Height = 255;
 			 pRobot->Height = 270;
 			
 			 imgResult = cv::Mat(pRun->Height, pRun->Width, CV_8UC3);
