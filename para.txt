@@ -1,0 +1,14 @@
+1.000000,//Scale
+C:\Users\Khai\Desktop\Data,//PathSave
+1,//Maximum Picture
+115,//valBinary1 Fillter
+25,//valBlur Fillter
+11,//szM Fillter
+21,//valSplit Fillter
+1,//valBinary2 Fillter
+146.000000,160000.000000,//(minTrig/maxTrig)
+500,500,//(DelayTrig/DelayStopTrig) 
+246,//valBinaryTrig
+18,//szMtrig
+600.000000,1300.000000,//(minArea/maxArea)
+10,100,//(minNumber/maxNumber)
